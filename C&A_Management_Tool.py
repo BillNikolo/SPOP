@@ -17,10 +17,6 @@ Classrooms = {}
 Professors = {}
 Students = {}
 
-class Interface:
-	pass
-
-
 class Classroom:
 
 	def __init__(self, course_name, pr_Initials, number_of_seats, time, room_number, duration):
@@ -73,10 +69,48 @@ class Professor:
 	def __init__(self):
 		pass
 
+	def createClass(self):
+		pass
+
+	def changeInfo(self):
+		pass
+
+	def cancelClass(self):
+		pass
+
+	def professorLogIn(self):
+		pass
+
+	def changeProfessorPassword(self):
+		pass
+
+	def extractAttendanceList(self):
+		pass
+
+	def professor_Int(self):
+		pass
+
 class Student:
 	def __init__(self):
 		pass
 
+	def registerStudent(self):
+		pass
+
+	def registerClass(self):
+		pass
+
+	def changeSeating(self):
+		pass
+
+	def unregisterFromClass(self):
+		pass
+
+	def student_Int(self):
+		pass
 
 if __name__ == "__main__":
-	pass
+	while True:
+		print("Welcome to my Class management Tool")
+		target = input("Are you a Professor(1) or a student(2)")
+
